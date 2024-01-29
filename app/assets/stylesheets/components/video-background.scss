@@ -1,0 +1,14 @@
+
+.vido {
+  display: flex;
+  justify-content: center;
+ // Added the missing unit
+  height: 20%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.vid {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
