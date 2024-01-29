@@ -45,7 +45,6 @@ gem 'bootsnap', require: false
 gem 'devise'
 
 gem 'bootstrap', '~> 5.1.3'
-gem 'jquery-rails'
 
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 6.1'
