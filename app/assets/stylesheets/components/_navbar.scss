@@ -1,0 +1,28 @@
+.navb {
+}
+.nv-items {
+    display: flex;
+    justify-content: space-evenly;
+    // margin:
+}
+.buttons {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+        &:hover {
+            background-color: white;
+            color: black;
+            text-decoration: none;
+        }
+}
+.nv-items a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}

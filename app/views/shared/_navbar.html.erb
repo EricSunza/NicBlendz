@@ -1,15 +1,25 @@
-<div>
-  <div class="vido">
-    <%= video_tag "nicblendz.mp4", autoplay: true, muted: true, loop: true, class: "vid" %>
+<%# <div class="container"> %>
+  <div class="vido" data-controller="slowed-video">
+    <%= video_tag "nicblendz.mp4", autoplay: true, loop: true, oncanplay: "this.muted=true", class: "vid", data: { slowed_video_target: "video" } %>
   </div>
-        <% if user_signed_in? %>
-              <%= link_to "Action", "#" %>
-              <%= link_to "Another action", "#" %>
-              <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete} %>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-          </li>
-        <% end %>
+  <div class="nv-items">
+    <% if user_signed_in? %>
+      <%= link_to "Home", "#", class: "buttons"  %>
+      <%= link_to "Team", "#", class: "buttons"  %>
+      <%= link_to "Profile", "#", class: "buttons"  %>
+      <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "buttons"  %>
+    <% else %>
+      <%= link_to "Home", "#", class: "buttons"  %>
+      <%= link_to "Team", "#", class: "buttons"  %>
+      <%= link_to "Register",  new_registration_path(:user), class: "buttons"  %>
+      <%= link_to "Login", new_user_session_path, class: "buttons"  %>
+    <% end %>
   </div>
-</div>
+<%# </div> %>
+
+
+
+
+
+
+
