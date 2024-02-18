@@ -1,28 +1,13 @@
-.navb {
-}
 .nv-items {
     display: flex;
     justify-content: space-evenly;
-    // margin:
+    background: linear-gradient(to bottom, black, rgb(180, 129, 1));
+    padding: 10px 0;
 }
 .buttons {
-    text-decoration: none;
     color: white;
-    background-color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    margin-top: 15px;
-    border-radius: 5px;
-    padding: 5px 10px 5px 10px;
         &:hover {
-            background-color: white;
-            color: black;
-            text-decoration: none;
+            color: white;
+            text-shadow: -.25px -.25px 0 white, .25px .25px white;
         }
-}
-.nv-items a {
-    text-decoration: none;
-    &:hover {
-        text-decoration: none;
-        color: black;
-    }
 }

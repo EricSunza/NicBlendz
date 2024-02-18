@@ -1,10 +1,12 @@
-
 .vido {
     display: flex;
     justify-content: center;
+    margin-top: 2px;
 }
 
-    .vid {
-        width: 100%;
-    // pointer-events: none;
-    }
+.vid {
+    border: 1px solid rgb(180, 129, 1);
+min-width: 100%;
+min-height: 100%;
+object-fit: cover;
+}
