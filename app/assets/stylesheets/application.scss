@@ -13,9 +13,20 @@
  *= require_tree .
  *= require_self
  */
- @import "components/index";
- @import "bootstrap";
+  @import "components/index";
+  @import "bootstrap";
 
   body {
-    //background-color: #000;
+    background-color: #000;
+  }
+  a {
+      text-decoration: none;
+      color: white;
+      &:hover {
+          color: white;
+          text-shadow: -.25px -.25px 0 white, .25px .25px white;
+      }
+  }
+  .labels {
+    display: block;
   }
