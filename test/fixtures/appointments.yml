@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  team: one
+  appointment_date: 2024-02-23 00:21:40
+  service: one
+
+two:
+  user: two
+  team: two
+  appointment_date: 2024-02-23 00:21:40
+  service: two
