@@ -1,3 +1,7 @@
-<%= @teams.each do |team| %>
-  <%= team.name %>
-<% end %>
+<div class="team">
+  <img src="<%= image_path('nicb.png') %>" alt="nic" class="nicb">
+  <% @teams.each do |team| %>
+    <p class='name'><%= team.name %></p>
+    <p class='description'><%= team.description %></p>
+  <% end %>
+</div>
