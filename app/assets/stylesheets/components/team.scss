@@ -1,14 +1,37 @@
-.nicb {
-  height: 500px;
+.team-container {
+  display: grid;
+  justify-items: center;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background: rgb(180, 129, 1);
+  color: white;
   width: 200px;
+  height: 400px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+
+.nicb {
+  height: 300px;
+  width: 150px;
 }
 .name{
   font-size: 20px;
   font-weight: bold;
   color:  white;
+  border: red 2px solid;
 }
 
 .description {
+  border: 2px blue solid;
   font-size: 15px;
   color: white;
 }

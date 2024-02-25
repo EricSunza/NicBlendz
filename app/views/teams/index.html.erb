@@ -1,7 +1,16 @@
-<div class="team">
-  <img src="<%= image_path('nicb.png') %>" alt="nic" class="nicb">
-  <% @teams.each do |team| %>
-    <p class='name'><%= team.name %></p>
-    <p class='description'><%= team.description %></p>
-  <% end %>
+<div class="team-container">
+  <div class="team">
+    <img src="<%= image_path('nicb.png') %>" alt="nic" class="nicb">
+    <% @teams.each do |team| %>
+
+      <div class='name'>
+        <%= team.name %>
+      </div>
+
+      <div class='description'>
+        <%= team.description %>
+      </div>
+
+    <% end %>
+  </div>
 </div>
