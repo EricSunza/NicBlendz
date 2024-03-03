@@ -7,5 +7,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-Team.create(name: 'nic',
-            description: "Hi there I'm Nic I have six years of experience in barbering I can speak four languages English German Spanish Portugues")
+Team..destroy_all
+Team.create(name: 'nic', email: 'nic@example.com',
+            description: "Hi there I'm Nic I have six years of experience in barbering I can speak four languages English
+            German Spanish Portugues")
+Team.create(name: 'Hitler', email: 'hitler@example.com',
+            description: "Hi there I'm Nic I have six years of experience in barbering I can speak two languages English
+            German")

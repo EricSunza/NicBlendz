@@ -18,7 +18,12 @@
 
   body {
     background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
+
+
   a {
       text-decoration: none;
       color: white;
@@ -26,6 +31,8 @@
           color: white;
           text-shadow: -.25px -.25px 0 white, .25px .25px white;
       }
+
+
   }
   .labels {
     display: block;

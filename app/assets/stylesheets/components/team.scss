@@ -1,27 +1,26 @@
-.team-container {
+.team-cont {
   display: grid;
-  justify-items: center;
-}
-.team {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 20px;
-  padding: 20px;
-  border: 2px solid white;
-  border-radius: 10px;
-  background: rgb(180, 129, 1);
-  color: white;
-  width: 200px;
-  height: 400px;
-  overflow: hidden;
-  transition: 0.5s;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border: 2px solid green;
 }
 
+
+.team {
+  border: 2px solid white;
+  color: white;
+  border: 2px solid white;
+  width: 150px;
+  height: 200px;
+}
+
+.nicimg {
+  border: 2px solid white;
+  height: min-content;
+}
 
 .nicb {
-  height: 300px;
-  width: 150px;
+  height: 80px;
 }
 .name{
   font-size: 20px;
@@ -34,4 +33,5 @@
   border: 2px blue solid;
   font-size: 15px;
   color: white;
+  font-size: 13px;
 }

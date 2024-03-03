@@ -14,8 +14,8 @@
     <%= render "shared/navbar" %>
     <%= yield %>
     <%= render "shared/flashes" %>
+  </body>
     <% unless (controller_name == 'sessions' && action_name == 'new') || (controller_name == 'registrations' && action_name == 'new') %>
       <%= render 'shared/footer' %>
     <% end %>
-  </body>
 </html>
