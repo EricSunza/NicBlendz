@@ -6,6 +6,9 @@
 .big-footer {
     display: flex;
     justify-content: space-around;
-    margin-top: auto;
+    position: relative;
+    bottom: 0;
+    margin-top: 10px;
+    width: 100%;
     background: linear-gradient(to bottom, rgba(180, 129, 1, 0.783), black);
 }
